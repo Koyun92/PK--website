@@ -26,7 +26,7 @@ body {
 .wrapper {
     background-image: url('../img/background-image.jpg');
     background-size: cover;
-    background-position: 50% 30%;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
     padding: 2rem;
     width: 100vw;
@@ -149,7 +149,7 @@ body {
             color: $main-color;
             padding: 1rem;
             transition: .3s;
-            font-size: 3rem;
+            font-size: 2.5rem;
 
             &:hover {
                 color: $hover-color
@@ -189,7 +189,7 @@ body {
 
 
     .nav {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
 
         .hamburger-inner,
         .hamburger-inner::after,
@@ -205,7 +205,7 @@ body {
 
 
     .nav {
-        font-size: 3rem;
+
         max-width: 1000px;
         margin: auto;
 
@@ -234,10 +234,7 @@ body {
             padding: 2rem 1rem;
 
 
-            i {
 
-                font-size: 4rem;
-            }
         }
 
 

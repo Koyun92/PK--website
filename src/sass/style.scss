@@ -75,6 +75,7 @@ body {
 
     &--mobile {
         padding-right: 2rem;
+
     }
 
     &__box {
@@ -86,6 +87,7 @@ body {
         transform: translateY(-50%);
         background-color: $components-bg-color;
         transition: .3s ease;
+        z-index: 100;
 
         &--active {
             left: 0;
@@ -133,14 +135,36 @@ body {
     }
 }
 
+.splide {
+    &__slide img {
+        width: 80%;
+        height: auto;
+
+
+
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
 .container {
     margin: auto;
+    position: relative;
+    padding: 2rem;
     margin-top: 8vh;
     max-width: 1000px;
     width: 80vw;
     height: 80vh;
     background-color: $components-bg-color;
     overflow-Y: scroll;
+    font-family: 'Roboto'sans-serif;
+
+
 
 
     &__title {

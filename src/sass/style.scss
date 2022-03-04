@@ -166,6 +166,8 @@ body {
     background-color: $components-bg-color;
     overflow-Y: scroll;
     font-family: 'Roboto'sans-serif;
+    overflow-X: hidden;
+    box-sizing: content-box;
 
     &--contact {
         padding: 4rem;

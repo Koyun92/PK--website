@@ -407,7 +407,7 @@ main {
     }
 }
 
-@media (min-width:1350px) {
+@media (min-width:1200px) {
 
     .splide {
         &__slide img {
@@ -424,4 +424,30 @@ main {
 
 
 
+}
+
+@media (min-width:1400px) {
+
+    .splide {
+        &__slide img {
+            width: 45%;
+            height: auto;
+
+        }
+
+
+    }
+}
+
+@media (min-width:1600px) {
+
+    .splide {
+        &__slide img {
+            width: 40%;
+            height: auto;
+
+        }
+
+
+    }
 }

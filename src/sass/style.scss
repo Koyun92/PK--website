@@ -161,19 +161,7 @@ main {
 
     }
 
-    &--about {
-        p {
-            width: 80%;
-            padding: 2rem;
-            margin: auto;
-            text-align: justify;
-        }
-
-        h3 {
-            text-align: center;
-            text-transform: uppercase;
-        }
-    }
+    &--about {}
 
     &__wrapper {
         max-width: 1000px;
@@ -218,6 +206,15 @@ main {
         &:hover {
             color: $hover-color;
         }
+
+    }
+
+    &__text {
+
+        width: 80%;
+        padding: 2rem;
+        margin: auto;
+        text-align: justify;
 
     }
 

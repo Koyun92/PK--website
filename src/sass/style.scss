@@ -34,6 +34,11 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    color: $main-color;
+}
+
 // .wrapper-contact {
 //     width: 100%;
 //     padding: 2rem;
@@ -70,6 +75,7 @@ body {
         width: 80vw;
         max-width: 1000px;
         margin: auto;
+        font-size: 2rem;
 
 
     }
@@ -86,7 +92,7 @@ body {
         top: 50%;
         left: -100%;
         transform: translateY(-50%);
-        background-color: $components-bg-color;
+        background-color: $menu-bg-color;
         transition: .3s ease;
         z-index: 100;
 
@@ -176,13 +182,62 @@ main {
     }
 
     &--contact {
-        padding: 4rem;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__wrapper {
+        max-width: 1000px;
+        margin: 2rem auto;
+
+        i {
+            padding-right: .5rem;
+        }
+
+    }
+
+    &__box {
+        margin: 3rem 0;
+        text-align: center;
+
+        a {
+            margin-top: 2rem;
+            display: block;
+
+
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+
+    }
+
+    &__btn {
+        display: block;
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1rem 2rem;
+        color: $main-color;
+        font-weight: bold;
+        background-color: $menu-bg-color;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $hover-color;
+        }
+
     }
 
 
 
 
     &__title {
+
         text-transform: uppercase;
         font-size: 1.8rem;
         padding: 1rem 0;
@@ -207,7 +262,7 @@ main {
         flex-direction: column;
         align-items: center;
         margin-bottom: 4rem;
-        background-color: $components-bg-color;
+        background-color: $menu-bg-color;
 
 
         i {
@@ -322,16 +377,23 @@ main {
 
     .container {
 
-        z-index: 0;
-        top: 9%;
-        left: 0;
-        right: 0;
-        bottom: 9%;
-        background-color: $components-bg-color;
-        overflow-Y: scroll;
-        font-family: 'Roboto'sans-serif;
+        &__wrapper {
+            max-width: 1000px;
+            margin: 8rem auto;
 
 
+        }
+
+        &__btn {
+
+            margin-top: 5rem;
+
+            padding: 2rem 3rem;
+
+
+
+
+        }
 
 
     }

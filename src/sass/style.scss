@@ -39,33 +39,6 @@ a {
     color: $main-color;
 }
 
-// .wrapper-contact {
-//     width: 100%;
-//     padding: 2rem;
-// }
-
-// .header {
-//     width: 100%;
-//     margin: auto;
-//     height: 30vh;
-//     margin-top: 10vh;
-//     background-image: url(../img/tape.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-
-//     &__title {
-//         font-size: 1.5rem;
-//         text-align: center;
-//         padding-top: 2rem;
-//         color: rgb(41, 36, 36);
-//         text-transform: uppercase;
-//         letter-spacing: 5px;
-//         font-family: 'Comforter', cursive;
-//         text-shadow: 0px 2px 12px rgba(66, 68, 90, 1);
-
-//     }
-
-// }
 
 .nav {
     font-family: 'Anton', sans-serif;
@@ -188,6 +161,20 @@ main {
 
     }
 
+    &--about {
+        p {
+            width: 80%;
+            padding: 2rem;
+            margin: auto;
+            text-align: justify;
+        }
+
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
     &__wrapper {
         max-width: 1000px;
         margin: 2rem auto;
@@ -197,6 +184,7 @@ main {
         }
 
     }
+
 
     &__box {
         margin: 3rem 0;
@@ -244,6 +232,12 @@ main {
         letter-spacing: 4px;
         display: flex;
         justify-content: center;
+
+        &--about {
+            text-align: center;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
     }
 
 }

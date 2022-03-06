@@ -125,10 +125,7 @@ a {
 
     }
 
-    &__slide {
-        display: flex;
-        justify-content: center;
-    }
+
 }
 
 main {
@@ -154,6 +151,10 @@ main {
         display: none;
     }
 
+    a {
+        text-align: center;
+    }
+
     &--contact {
 
         display: flex;
@@ -161,7 +162,7 @@ main {
 
     }
 
-    &--about {}
+
 
     &__wrapper {
         max-width: 1000px;
@@ -189,6 +190,21 @@ main {
             font-size: 1.8rem;
         }
 
+
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+
+        i {
+            padding: 2rem;
+            transition: .3s;
+
+            &:hover {
+                color: $hover-color
+            }
+        }
 
     }
 
@@ -245,6 +261,13 @@ main {
     left: 0;
     width: 100%;
 
+    p {
+        text-align: center;
+        color: $main-color;
+
+        background-color: $menu-bg-color;
+    }
+
     &__socials {
         position: fixed;
         right: 0;
@@ -258,7 +281,7 @@ main {
 
         i {
             color: $main-color;
-            padding: .5rem .3rem;
+            padding: .8rem .3rem !important;
             transition: .3s;
             font-size: 2rem;
 

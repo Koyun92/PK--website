@@ -135,14 +135,13 @@ main {
 
 .container {
     scrollbar-width: none;
-    margin: auto;
     position: absolute;
     padding-top: 2%;
     z-index: 0;
-    top: 15%;
+    top: 10%;
     left: 0;
     right: 0;
-    bottom: 15%;
+    bottom: 10%;
     background-color: $components-bg-color;
     overflow-Y: scroll;
     font-family: 'Roboto'sans-serif;
@@ -167,6 +166,9 @@ main {
     &__wrapper {
         max-width: 1000px;
         margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         i {
             padding-right: .5rem;
@@ -218,6 +220,9 @@ main {
         background-color: $menu-bg-color;
         text-decoration: none;
         text-transform: uppercase;
+        align-self: center;
+
+        &--images {}
 
         &:hover {
             color: $hover-color;
@@ -227,7 +232,7 @@ main {
 
     &__text {
 
-        width: 80%;
+        width: 70%;
         padding: 2rem;
         margin: auto;
         text-align: justify;
@@ -309,7 +314,7 @@ main {
 @media (min-width:576px) {
     .splide {
         &__slide img {
-            width: 80%;
+            width: 65%;
             height: auto;
 
 
@@ -359,7 +364,7 @@ main {
 
     .splide {
         &__slide img {
-            width: 60%;
+
             height: auto;
 
         }
@@ -391,9 +396,10 @@ main {
 
     .container {
 
+
         &__wrapper {
             max-width: 1000px;
-            margin: 8rem auto;
+            margin: 2rem auto;
 
 
         }
@@ -401,10 +407,8 @@ main {
         &__btn {
 
             margin-top: 5rem;
-
+            display: block;
             padding: 2rem 3rem;
-
-
 
 
         }
@@ -425,7 +429,7 @@ main {
 
     .splide {
         &__slide img {
-            width: 50%;
+
             height: auto;
 
         }
@@ -440,28 +444,28 @@ main {
 
 }
 
-@media (min-width:1400px) {
+// @media (min-width:1400px) {
 
-    .splide {
-        &__slide img {
-            width: 45%;
-            height: auto;
+//     .splide {
+//         &__slide img {
 
-        }
+//             height: auto;
 
-
-    }
-}
-
-@media (min-width:1600px) {
-
-    .splide {
-        &__slide img {
-            width: 38%;
-            height: auto;
-
-        }
+//         }
 
 
-    }
-}
+//     }
+// }
+
+// @media (min-width:1600px) {
+
+//     .splide {
+//         &__slide img {
+
+//             height: auto;
+
+//         }
+
+
+//     }
+// }
